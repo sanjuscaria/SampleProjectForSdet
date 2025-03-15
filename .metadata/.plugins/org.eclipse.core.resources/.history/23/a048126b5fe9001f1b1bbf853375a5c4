@@ -1,0 +1,39 @@
+package codeTesting;
+
+import java.util.function.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+enum Color {
+    RED,
+    GREEN,
+    BLUE;
+
+    // Enum constructor called separately for each
+    // constant
+    private Color() {
+        System.out.println("Constructor called for : " + this.toString());
+    }
+
+    public void colorInfo() {
+        System.out.println("Universal Color");
+    }
+}
+
+public class Compare {
+	
+	//public enum Color {Red, Green, Blue}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Color c1 = Color.RED;
+	        System.out.println(c1);
+	        c1.colorInfo();
+		
+		
+
+	}
+
+}

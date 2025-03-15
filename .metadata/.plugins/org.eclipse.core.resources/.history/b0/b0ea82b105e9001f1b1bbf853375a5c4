@@ -1,0 +1,20 @@
+package codeTesting;
+
+import java.util.function.*;
+
+public class Compare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Consumer con = (x) -> System.out.println(x);
+		con.accept("this is a string");
+		
+		//System.out.println(fun.apply(1));
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package codeTesting;
+
+import java.util.Scanner;
+
+public class SystemIN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] Arr = { 1, 2, 3, 5, 0};
+		int[] tempArr = Arr.clone(); 
+		
+		
+		System.out.println(Arr[1]);
+		System.out.println(tempArr[1]);
+
+		
+		
+		
+
+	}
+
+}

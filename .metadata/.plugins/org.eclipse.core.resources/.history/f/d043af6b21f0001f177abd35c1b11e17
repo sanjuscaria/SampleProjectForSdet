@@ -1,0 +1,46 @@
+package codeTesting;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Spliterator;
+import java.util.function.*;
+
+import javax.xml.stream.events.Characters;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Compare {	
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		int num = 1234;
+		
+		System.out.println(String.valueOf(num));
+		
+		char[] arr = String.valueOf(num).toCharArray();
+		int len = arr.length;
+		int sum = 0;
+		int pow = 1;
+		
+		for(char c : arr)
+		{
+			for(int i = 0; i <= len-1; i ++)
+			{
+				pow = pow * c;
+			}
+			sum = sum + pow;
+		}
+		
+		System.out.println(sum);
+		
+	}
+	
+	
+    
+
+}

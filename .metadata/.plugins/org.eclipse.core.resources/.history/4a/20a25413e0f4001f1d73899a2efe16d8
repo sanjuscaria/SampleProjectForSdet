@@ -1,0 +1,54 @@
+package codeTesting;
+
+import java.util.regex.*;
+
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = 12345;
+		 int count = 0;
+	        num = Math.abs(num); // Handle negative numbers
+//	        do {
+//	            count++;
+//	            num /= 10;
+//	        } while (num > 0);
+		
+		System.out.println(count);
+		
+		while(num > 0)
+		{
+			num /= 10;
+			count++;
+		}
+		System.out.println(count);
+
+	}
+	
+	
+
+}
+
+class Animal {
+    String type;
+
+    Animal(){}
+    // No default constructor, only parameterized constructor
+    Animal(String type) {
+        this.type = type;
+        System.out.println("Animal constructor called: " + type);
+    }
+}
+
+class Dog extends Animal {
+    String breed;
+
+    Dog(String type, String breed) {
+        super(type);  // Explicit call to superclass constructor
+        this.breed = breed;
+        System.out.println("Dog constructor called: " + breed);
+    }
+}
+

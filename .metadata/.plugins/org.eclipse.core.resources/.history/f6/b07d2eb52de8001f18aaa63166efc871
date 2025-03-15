@@ -1,0 +1,33 @@
+package codeTesting;
+
+class Person
+{
+	String name;
+	public Person(String name)
+	{
+		this.name = name;
+	}
+}
+
+
+
+public class PassByValue {
+
+
+	public static void modify(Person p)
+	{
+		p.name = "John";
+		p = new Person("Alice");
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	Person person = new Person("Mike");
+	modify(person);
+	System.out.println(person.name);
+		
+	}
+
+}

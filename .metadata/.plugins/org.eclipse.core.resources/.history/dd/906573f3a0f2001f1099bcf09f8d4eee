@@ -1,0 +1,28 @@
+package codeTesting;
+
+import java.util.regex.*;
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String reg = "\\d+";
+		String str = "this has 123 number";
+		
+		Pattern p = Pattern.compile("\\d");
+		Matcher m = p.matcher(str);
+		
+		while (m.find()) {
+			System.out.println("found : "+ m.matches());
+			
+		}
+	
+		
+		
+		
+		
+
+	}
+
+}

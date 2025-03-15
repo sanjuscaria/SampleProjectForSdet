@@ -1,0 +1,50 @@
+package codeTesting;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.regex.*;
+
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] arr = {1,2,2,3,4,4,6};
+		
+		Set<Integer> s = new HashSet<>();
+		
+		for(int i : arr)
+		{
+			s.add(null);
+		}
+		
+		s.forEach(System.out::println);
+		
+	}
+	
+	
+
+}
+
+class Animal {
+    String type;
+
+    Animal(){}
+    // No default constructor, only parameterized constructor
+    Animal(String type) {
+        this.type = type;
+        System.out.println("Animal constructor called: " + type);
+    }
+}
+
+class Dog extends Animal {
+    String breed;
+
+    Dog(String type, String breed) {
+        super(type);  // Explicit call to superclass constructor
+        this.breed = breed;
+        System.out.println("Dog constructor called: " + breed);
+    }
+}
+

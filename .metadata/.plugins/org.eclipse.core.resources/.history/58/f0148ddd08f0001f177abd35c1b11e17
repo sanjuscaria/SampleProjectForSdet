@@ -1,0 +1,38 @@
+package codeTesting;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Spliterator;
+import java.util.function.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Compare {	
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		char c = 'r';
+		boolean isVowel = false;
+		
+		switch (c) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u': isVowel = true;
+		}
+		
+		System.out.println(isVowel);
+		
+		
+		
+	}
+	
+	
+	
+
+}

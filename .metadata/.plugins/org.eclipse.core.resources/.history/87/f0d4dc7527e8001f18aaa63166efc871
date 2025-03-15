@@ -1,0 +1,39 @@
+package codeTesting;
+
+
+
+class Sample
+{
+	int x;
+	public Sample(int i)
+	{
+		this.x = i;
+	}
+	
+	public Sample()
+	{
+		this.x = 10;
+	}
+}
+
+
+public class PassByValue {
+
+	public static void change(Sample t)
+	{
+		//t = new Sample();
+		t.x = 10;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Sample t = new Sample(5);
+		System.out.println(t.x);
+		change(t);
+		
+		System.out.println(t.x);
+		
+	}
+
+}

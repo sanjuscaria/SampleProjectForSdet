@@ -1,0 +1,40 @@
+package codeTesting;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Spliterator;
+import java.util.function.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Compare {	
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		String str = "abcde";
+		int upperCount = 0;
+		System.out.println(str.matches("[a]")); 
+		
+		for(int i = 0; i < str.length()-1 ; i ++)
+		{
+			char x = str.charAt(i);
+			
+			if(Character.isUpperCase(x))
+			{
+				upperCount ++;
+				
+			}
+			
+			
+		}
+		
+		System.out.println(upperCount);
+		
+	}
+	
+	
+	
+
+}

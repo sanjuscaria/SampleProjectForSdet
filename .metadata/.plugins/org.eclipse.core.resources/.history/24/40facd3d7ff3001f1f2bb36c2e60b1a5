@@ -1,0 +1,20 @@
+package codeTesting;
+
+import java.util.regex.*;
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pattern p = Pattern.compile("[A-Z][a-z][0-9]");
+		Matcher m = p.matcher("this is a string With Caps and num 123 456 789");
+		
+		System.out.println(m.find()); 
+
+		
+		
+
+	}
+
+}

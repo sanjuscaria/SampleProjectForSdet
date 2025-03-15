@@ -1,0 +1,43 @@
+package codeTesting;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.*;
+
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] a = {1, 1, 2, 2, 3, 4, 4, 5};
+        int newLength = removeDuplicates(a);
+
+        // Print the unique elements
+        System.out.print("Array after removing duplicates: ");
+        for (int i = 0; i < newLength; i++) {
+            System.out.print(a[i] + " ");
+        }
+		
+	}
+	public static int removeDuplicates(int[] a) {
+        if (a.length == 0) return 0; // Edge case: empty array
+
+        int j = 1; // Pointer for unique elements
+
+        for (int i = 0; i <= a.length; i++) {
+            if (a[i] != a[i + 1]) { // If new unique element found
+                a[j++] = a[i];  // Place it at the 'index' position
+                  // Move index forward
+            }
+        }
+        return j; // New length of unique elements
+    }
+
+	
+
+}
+
+

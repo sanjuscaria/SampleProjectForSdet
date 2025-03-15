@@ -1,0 +1,24 @@
+package codeTesting;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Spliterator;
+import java.util.function.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Compare {
+	public static void main(String[] args) {
+
+		Integer sh_object = new Integer(763123); 
+		  
+        // It will return the value of this Integer as a short type 
+        short sh_value = sh_object.shortValue(); 
+        System.out.println(" The Value of sh_value = " + sh_value); 
+		
+
+	}
+
+}

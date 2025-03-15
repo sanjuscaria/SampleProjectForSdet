@@ -1,0 +1,16 @@
+package codeTesting;
+
+public class ExcelTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String excelFilePath = System.getProperty("user.dir")+"\\files\\employees.xlsx";	
+		
+		
+		
+		System.out.println(excelFilePath);
+
+	}
+
+}

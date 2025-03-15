@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Selenium4Examples"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="codeTesting.MethodHiding"/>
+        <listEntry value="codeTesting.PageBase"/>
+        <listEntry value="testcases.Employee"/>
+        <listEntry value="codeTesting.TestContextTest"/>
+        <listEntry value="testcases.LambdaTest"/>
+        <listEntry value="codeTesting.Child"/>
+        <listEntry value="codeTesting.StreamsExamples"/>
+        <listEntry value="testcases.PageLoadPerformance"/>
+        <listEntry value="testcases.OrangeHrm"/>
+        <listEntry value="testcases.BaseClass"/>
+        <listEntry value="codeTesting.Parent"/>
+        <listEntry value="codeTesting.Baseclass"/>
+        <listEntry value="codeTesting.LoginPage"/>
+        <listEntry value="testcases.TestNGTest"/>
+        <listEntry value="testcases.JavaScriptExec"/>
+        <listEntry value="pageobjects.LoginPage"/>
+        <listEntry value="codeTesting.ArrayDuplicates"/>
+        <listEntry value="testcases.LoginHrm"/>
+        <listEntry value="testcases.TestBrowsers"/>
+        <listEntry value="codeTesting.QAFoxTesting"/>
+        <listEntry value="codeTesting.EmailUtil"/>
+        <listEntry value="testcases.InterfaceTest"/>
+        <listEntry value="codeTesting.LoginTest"/>
+        <listEntry value="testcases.MyComparator"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

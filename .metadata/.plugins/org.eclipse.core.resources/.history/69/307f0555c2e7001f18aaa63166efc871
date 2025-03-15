@@ -1,0 +1,27 @@
+package codeTesting;
+
+import java.util.Scanner;
+
+public class SystemIN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//	String a = new String("apple");
+//	String b = new String("apple");
+		
+		String a = "apple";
+		String b = "apple";
+	
+	if (a==b)
+		System.out.println("true");
+	else 
+		System.out.println("false");
+
+		
+		
+		
+
+	}
+
+}

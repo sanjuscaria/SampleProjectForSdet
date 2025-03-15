@@ -1,0 +1,21 @@
+package codeTesting;
+
+import java.util.regex.*;
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(Pattern.matches("[amn]?", "a"));//true (a or m or n comes one time)  
+		System.out.println(Pattern.matches("[amn]?", "aaa"));//false (a comes more than one time)  
+		System.out.println(Pattern.matches("[amn]?", "aammmnn"));//false (a m and n comes more than one time)  
+		System.out.println(Pattern.matches("[amn]?", "aazzta"));//false (a comes more than one time)  
+		System.out.println(Pattern.matches("[amn]?", "am"));//false (a or m or n must come one time)  
+
+		
+		
+
+	}
+
+}

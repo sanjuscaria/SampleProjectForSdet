@@ -1,0 +1,42 @@
+package codeTesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class StringBufferTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+	Employee1 e = new Employee1();
+	Employee1 e2= new Employee1();
+	
+	System.out.println("number of employees created : "+Employee1.counter);
+	
+		
+		
+		
+		
+	
+	
+	
+		
+	}
+		
+		
+	}
+	
+class Employee1{
+	static int counter =0;
+	public Employee1()
+	{
+		counter++;
+	}
+}

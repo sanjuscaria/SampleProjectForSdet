@@ -1,0 +1,17 @@
+package codeTesting;
+
+import java.util.function.*;
+
+public class Compare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Function<Integer, Integer> fun = a -> a+a;
+		System.out.println(fun.apply(123));
+		
+		
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package codeTesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class StringBufferTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+	
+		System.out.println(returnTest());
+		
+		
+		
+	}
+	
+	@SuppressWarnings("finally")
+	public static int returnTest() {
+		
+		
+		try
+		{
+			//return 1;
+		}catch(Exception x)
+		{
+			return 2;
+		}
+		
+		
+		
+		return 0;
+		
+	}
+		
+		
+	}
+	

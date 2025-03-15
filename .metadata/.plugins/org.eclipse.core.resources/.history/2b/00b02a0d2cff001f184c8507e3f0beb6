@@ -1,0 +1,33 @@
+package codeTesting;
+
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class XpathTesting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	WebDriver driver = new ChromeDriver();
+	
+	driver.get("https://demowebshop.tricentis.com/");	
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
+	driver.manage().window().maximize();
+	
+	List<WebElement> lst = driver.findElements(By.xpath("//a[normalize-space(text())='Books']/parent::li/parent::ul/parent::div/ul/li"));
+	
+	System.out.println(lst.size());
+		
+		
+
+	}
+
+}

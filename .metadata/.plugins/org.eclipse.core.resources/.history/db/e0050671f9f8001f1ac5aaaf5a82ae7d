@@ -1,0 +1,63 @@
+package codeTesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class StringBufferTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        
+        // Open the webpage
+        driver.get("https://admin:admin@the-internet.herokuapp.com/");  // Change to your target URL
+
+        // Get all links on the page
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+
+        // Check each link
+        for (WebElement link : links) {
+            String url = link.getAttribute("href");
+            
+            // Validate URL
+            if (url != null && !url.isEmpty()) {
+                checkBrokenLink(url);
+            } else {
+                System.out.println("⚠️ Skipping empty or null URL");
+            }
+        }
+        
+        // Close browser
+        driver.quit();
+		
+	}
+	
+	public static void checkBrokenLink(String url) {
+        try {
+            HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+            connection.setRequestMethod("HEAD");
+            connection.connect();
+            int responseCode = connection.getResponseCode();
+
+            // Check response code
+            if (responseCode >= 400) {
+                System.out.println("❌ Broken Link: " + url + " (Response Code: " + responseCode + ")");
+            } else {
+                System.out.println("✅ Valid Link: " + url + " (Response Code: " + responseCode + ")");
+            }
+        } catch (IOException e) {
+            System.out.println("⚠️ Error checking link: " + url);
+        }
+    }
+
+}
+

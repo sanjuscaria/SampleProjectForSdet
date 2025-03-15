@@ -1,0 +1,54 @@
+package codeTesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class StringBufferTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+
+		Person p = new Indian();
+		p.nationality();
+
+		
+	}
+		
+		
+	}
+	
+class Person{
+	
+	static void getSalary() {
+		
+		System.out.println("from person");
+	
+	}
+	void nationality()
+	{
+		System.out.println("from person");
+		
+	}
+	
+}
+
+class Indian extends Person{
+	
+	static void getSalary()
+	{
+		System.out.println("from indian");
+	}
+	@Override
+	void nationality()
+	{
+		System.out.println("from indian");
+	}
+}

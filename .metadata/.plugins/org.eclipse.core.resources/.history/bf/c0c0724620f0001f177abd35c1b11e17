@@ -1,0 +1,51 @@
+package codeTesting;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Spliterator;
+import java.util.function.*;
+
+import javax.xml.stream.events.Characters;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Compare {	
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		String str = "this is a string with 123 and special !@#$ characters";
+		char[] arr = str.toCharArray();
+		int alphCount = 0;
+		int digitCout = 0;
+		int spaceCount = 0;
+		int splCount = 0;
+		for(char c : arr)
+		{
+			if(Character.isAlphabetic(c))
+				alphCount ++;
+			else if (Character.isDigit(c))
+				digitCout ++;
+			else if(Character.isSpace(c))
+				spaceCount  ++;
+			else splCount ++;
+		}
+		
+		System.out.println("alphCount : "+ alphCount);
+		System.out.println("digitCout : "+ digitCout);
+		System.out.println("spaceCount : "+ spaceCount);
+		System.out.println("splCount : "+ splCount);
+		
+		
+		
+		
+	}
+	
+	
+    
+
+}

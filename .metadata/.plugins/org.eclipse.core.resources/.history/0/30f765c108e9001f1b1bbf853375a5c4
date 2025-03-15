@@ -1,0 +1,23 @@
+package codeTesting;
+
+import java.util.function.*;
+
+public class Compare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "apple";
+		
+		char[] arr = str.toCharArray();
+		
+		for(char c : arr)
+		{
+			System.out.println((int)c);
+		}
+		
+		
+
+	}
+
+}

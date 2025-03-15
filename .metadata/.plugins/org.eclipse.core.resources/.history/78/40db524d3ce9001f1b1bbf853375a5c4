@@ -1,0 +1,24 @@
+package codeTesting;
+
+import java.util.function.*;
+
+public class Compare {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "apple";
+		
+		char[] arr = str.toCharArray();
+		
+		int sum = 0;
+		for(char c : arr)
+		{
+			sum = sum + (int)c;
+		}
+		
+		System.out.println(sum);
+
+	}
+
+}

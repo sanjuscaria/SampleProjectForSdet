@@ -1,0 +1,49 @@
+package codeTesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+public class StringBufferTest {
+
+	public static void main(String[] args) throws InterruptedException, CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		
+		Student s1 = new Student("john");
+		Student s2 = (Student) s1.clone();
+		
+		System.out.println(s2.name);
+		
+		s1.name = "james";
+		
+		
+		System.out.println(s2.name);
+
+		
+	}
+		
+		
+	}
+	
+class Student implements Cloneable{
+	String name;
+	
+	Student (String name)
+	{
+		this.name = name;
+	}
+	
+	protected Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
+		
+	}
+	
+}
+

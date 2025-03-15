@@ -1,0 +1,34 @@
+package codeTesting;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.*;
+
+
+public class RegexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] arr = {1,2,2,3,4,4,6};
+		Map<Integer, Integer> map = new HashMap<>();
+		int duplicate = 0;
+		for(int i : arr)
+		{
+		   map.put(i, map.getOrDefault(i, 0)+1);
+		}
+		
+		for(Map.Entry<Integer, Integer> i : map.entrySet()) {
+			System.out.println(i.getKey()+" :  "+i.getValue());
+		}
+		
+		
+	}
+	
+	
+
+}
+
+

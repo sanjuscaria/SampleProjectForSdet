@@ -1,0 +1,45 @@
+package codeTesting;
+
+public class AnonymousClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee emp = new Employee() {
+			public void getAge()
+			{
+				System.out.println("from ananymous class...");
+			}
+		};
+		
+		emp.getAge();
+		
+		FunctionalInter inter = new FunctionalInter() {
+
+			@Override
+			public void add() {
+				// TODO Auto-generated method stub
+				System.out.println("from inter anonymous class implementation");	
+			}
+			
+		};
+
+		inter.add();
+		
+	}
+
+}
+
+class Employee{
+	
+	public void getAge()
+	{
+		System.out.println("emplyoee class...");
+	}
+	
+}
+
+interface FunctionalInter
+{
+	public abstract void add();
+}
