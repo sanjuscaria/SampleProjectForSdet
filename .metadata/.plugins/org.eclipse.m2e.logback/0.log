@@ -4898,3 +4898,20 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.co
 2025-03-15 16:21:32,320 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
 2025-03-15 16:21:33,473 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
 2025-03-15 16:21:33,479 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
+2025-03-15 16:37:54,529 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\main\resources
+2025-03-15 16:37:54,538 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\test\resources
+2025-03-15 16:37:57,637 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\main\resources
+2025-03-15 16:37:57,640 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\test\resources
+2025-03-15 16:38:47,547 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\main\resources
+2025-03-15 16:38:47,553 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\test\resources
+2025-03-16 10:24:17,253 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-03-16 10:24:23,087 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\ProjectForGit\src\main\resources
+2025-03-16 10:24:23,093 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\ProjectForGit\src\test\resources
+2025-03-16 10:24:24,832 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\main\resources
+2025-03-16 10:24:24,839 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\SampleProjectForSdet\src\test\resources
+2025-03-16 10:24:29,850 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-03-16 10:24:29,851 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\test\Workspaces\workspace-arora\Selenium4Examples\src\main\resources
+2025-03-16 10:24:29,861 [Worker-7: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-03-16 10:24:29,871 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
+2025-03-16 10:24:32,769 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-03-16 10:24:32,775 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
